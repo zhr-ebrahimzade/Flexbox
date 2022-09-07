@@ -1,0 +1,165 @@
+/* 
+orange:#FF8A23
+gray:#424556
+description-section:#F1EDD4
+dark-gray:#3F3D56
+*/
+
+@font-face {
+  font-family: "Raleway";
+  src: url(./Fonts/Raleway-Regular.ttf) format(truetype);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Raleway";
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+h1 {
+  text-transform: uppercase;
+}
+h1,
+h2,
+h3 {
+  margin-bottom: 15px;
+}
+ul {
+  list-style: none;
+  list-style-position: inside;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.header {
+  height: 80px;
+}
+.logo-container {
+  width: 100%;
+  max-width: 50px;
+}
+.logo-container img {
+  border: 3px solid #000000;
+  border-radius: 50%;
+}
+nav a {
+  color: #424556;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+.header a:hover {
+  color: #000;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin-left: 20px;
+}
+/* DESCRIPTION SECTION */
+.description {
+  background-color: #f1edd4;
+  min-height: 400px;
+  padding: 10px;
+}
+.description h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.description .defend {
+  color: #ff8a23;
+}
+.des-img {
+  max-width: 400px;
+}
+.description .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ABOUT US */
+.about {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.about .about-box {
+  padding: 20px;
+
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+h2 {
+  color: #424556;
+}
+/* BOXES */
+
+.boxes .container {
+  display: flex;
+  justify-content: space-between;
+}
+.box {
+  flex: 1;
+  background-color: #74798c;
+  color: white;
+  border-radius: 10px;
+  margin: 20px 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  text-align: center;
+}
+.box img {
+  max-width: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.box div {
+  margin-top: 15px;
+}
+.box a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.box a:hover {
+  background-color: white;
+  color: #424556;
+}
+
+@media (max-width: 768px) {
+  .description .container {
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .about-box {
+    overflow: scroll;
+  }
+  .boxes .container {
+    display: block;
+  }
+  .logo-container {
+    display: none;
+  }
+  .header {
+    height: fit-content;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+}
